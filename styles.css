@@ -229,6 +229,29 @@ main {
     margin-bottom: 0;
 }
 
+#game-section {
+    background: #2A3435;
+    padding: 80px 40px;
+}
+
+#game-canvas {
+    width: 600px;
+    height: 400px;
+    aspect-ratio: 3/2;
+    margin: 20px auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#game-score {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F4A7A7;
+    margin: 15px 0;
+    text-align: center;
+}
+
 /* Testimonials Section */
 .testimonial-card {
     text-align: left;
@@ -374,6 +397,13 @@ footer p {
     .section p {
         font-size: 16px;
     }
+
+    #game-canvas {
+        width: 95%;
+        max-width: 600px;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -441,6 +471,21 @@ footer p {
     .contact-form {
         max-width: 100%;
     }
+
+    #game-section {
+        padding: 80px 15px;
+    }
+    
+    #game-canvas {
+        width: 100%;
+        max-width: 450px;
+    }
+    
+    #game-score {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
 }
 
 @media (max-width: 480px) {

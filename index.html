@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kristine's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Kristine - Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="images/KC Logo.png" alt="KC Logo">
-            </a>
-        </div>       
+            <a href="#"><img src="images/KC Logo.png" alt="KC Logo"></a>
+        </div>
         <button class="hamburger" aria-label="Toggle Navigation">
             <i class="fas fa-bars menu-icon"></i>
-            <i class="fas fa-times close-icon"></i>
+            <i class="fas fa-times close-icon" style="display: none;"></i>
         </button>
         <nav>
             <ul>
-                <li><a href="#home-section" class="nav-link" data-section="home">HOME</a></li>
-                <li><a href="#about-section" class="nav-link" data-section="about">ABOUT ME</a></li>
-                <li><a href="#projects-section" class="nav-link" data-section="projects">PROJECTS</a></li>
-                <li><a href="#skills-section" class="nav-link" data-section="skills">SKILLS</a></li>
-                <!-- <li><a href="#testimonials-section" class="nav-link" data-section="testimonials">TESTIMONIALS</a></li> -->
-                <li><a href="#contact-section" class="nav-link" data-section="contact">CONTACT ME</a></li>
+                <li><a href="#home-section" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about-section" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#projects-section" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#skills-section" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#game-section" class="nav-link" data-section="game">Game</a></li>
+                <li><a href="#contact-section" class="nav-link" data-section="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main id="home-section" class="section">
         <div class="image-container">
             <img src="images/hooo.jpg" alt="Kristine">
@@ -39,84 +38,45 @@
             <p><span id="aspiring"></span><span id="role"><span id="typed-role"></span><span id="role-cursor">|</span></span></p>
         </div>
     </main>
+
     <section id="about-section" class="section">
         <h2>About Me</h2>
-        <p>Hello! I'm Kristine, an aspiring software developer with a strong passion for cybersecurity. I enjoy building innovative solutions to real-world challenges and continuously exploring new technologies to expand my expertise. My goal is to create secure, efficient, and impactful applications while deepening my knowledge in software development and cybersecurity.</p>
+        <p>Hey there! I'm Kristine, a passionate software developer who loves exploring new technologies and building innovative solutions. Cybersecurity is my jam, and I'm always hunting for ways to create secure, efficient, and impactful applications. Let's code the future together!</p>
     </section>
+
     <section id="projects-section" class="section">
         <h2>Projects</h2>
         <div class="card-container">
-            <div class="card">
-                <h3>Doodle</h3>
-                <p>A Python-based painting application designed for seamless digital drawing and creativity.</p>
-            </div>
-            <div class="card">
-                <h3>Secret</h3>
-                <p>A dynamic social media platform built with HTML, CSS, and JavaScript, offering an interactive and engaging user experience.</p>
-            </div>
-            <div class="card">
-                <h3>Picture Who</h3>
-                <p>An interactive Java-based guessing game that challenges players' knowledge and deduction skills.</p>
-            </div>
-            <div class="card">
-                <h3>PetPal</h3>
-                <p>An immersive 8D virtual pet simulation developed using Unity and C++, providing users with an engaging digital companion experience.</p>
-            </div>
-            <div class="card">
-                <h3>Baskit</h3>
-                <p>A comprehensive e-commerce platform featuring three dedicated interfaces for customers, sellers, and "Tagabili," along with a web-based dashboard for streamlined management.</p>
-            </div>
-            <div class="card">
-                <h3>sPoki</h3>
-                <p>A feature-rich music player integrated with the Spotify API, developed in Python for an enhanced audio streaming experience.</p>
-            </div>
+            <div class="card"><h3>Doodle</h3><p>A Python-based painting app for digital creativity.</p></div>
+            <div class="card"><h3>Secret</h3><p>A dynamic social media platform built with HTML, CSS, and JS.</p></div>
+            <div class="card"><h3>Picture Who</h3><p>A Java-based interactive guessing game.</p></div>
+            <div class="card"><h3>PetPal</h3><p>An 8D virtual pet sim using Unity and C++.</p></div>
+            <div class="card"><h3>Baskit</h3><p>E-commerce platform with customer, seller, and management interfaces.</p></div>
+            <div class="card"><h3>sPoki</h3><p>Spotify API-integrated music player in Python.</p></div>
         </div>
     </section>
+
     <section id="skills-section" class="section">
         <h2>Skills</h2>
         <div class="card-container">
-            <div class="card">
-                <h3>Front-End Development</h3>
-                <p>Proficient in HTML, CSS, and JavaScript for building responsive, interactive, and visually appealing web applications.</p>
-            </div>
-            <div class="card">
-                <h3>Back-End Development</h3>
-                <p>Experienced in developing robust server-side applications using PHP, Laravel, and MySQL, ensuring secure and efficient database management.</p>
-            </div>
-            <div class="card">
-                <h3>Python & Java</h3>
-                <p>Skilled in software development using Python and Java, including applications in cybersecurity, automation, and system development.</p>
-            </div>
-            <div class="card">
-                <h3>Cybersecurity Fundamentals</h3>
-                <p>Knowledgeable in cybersecurity principles, including encryption, secure coding practices, and password security to enhance system protection.</p>
-            </div>
-            <div class="card">
-                <h3>Problem-Solving & Debugging</h3>
-                <p>Adept at analyzing, troubleshooting, and optimizing code to resolve technical challenges efficiently.</p>
-            </div>
+            <div class="card"><h3>Front-End</h3><p>HTML, CSS, JavaScript for responsive web apps.</p></div>
+            <div class="card"><h3>Back-End</h3><p>PHP, Laravel, MySQL for secure systems.</p></div>
+            <div class="card"><h3>Python & Java</h3><p>Cybersecurity and system development.</p></div>
+            <div class="card"><h3>Cybersecurity</h3><p>Encryption and secure coding practices.</p></div>
+            <div class="card"><h3>Problem-Solving</h3><p>Debugging and code optimization.</p></div>
         </div>
     </section>
-    <!-- <section id="testimonials-section" class="section">
-        <h2>Testimonials</h2>
-        <div class="card-container">
-            <div class="card testimonial-card">
-                <p>"ajsdjas"</p>
-                <h4>"askndas"</h4>
-            </div>
-            <div class="card testimonial-card">
-                <p>"ajsdjas"</p>
-                <h4>"askndas"</h4>
-            </div>
-            <div class="card testimonial-card">
-                <p>"ajsdjas"</p>
-                <h4>"askndas"</h4>
-            </div>
-        </div>
-    </section> -->
+
+    <section id="game-section" class="section">
+        <h2>Cyber Runner</h2>
+        <p>Dive through digital threats! Press Space or Click to jump.</p>
+        <canvas id="game-canvas"></canvas>
+        <span id="game-score">0</span>
+    </section>
+    
     <section id="contact-section" class="section">
         <h2>Contact Me</h2>
-        <p>Interested in collaborating or have a question? Feel free to reach out!</p>
+        <p>Let's connect! Drop me a message below.</p>
         <form class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -124,8 +84,9 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+
     <footer>
-        <p>&copy; 2025 Kristine Castres. All rights reserved.</p>
+        <p>© 2025 Kristine Castres. All rights reserved.</p>
         <ul class="footer-social-icons">
             <li><a href="https://github.com/castresK" target="_blank"><i class="fab fa-github"></i></a></li>
             <li><a href="mailto:kristinecastres10@gmail.com"><i class="fas fa-envelope"></i></a></li>
